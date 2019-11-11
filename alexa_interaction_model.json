@@ -1,0 +1,546 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mama sound",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetPlaceEventIntent",
+                    "slots": [
+                        {
+                            "name": "Event",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "{Event} où ça",
+                        "{Event} c'est où",
+                        "où se passe l'évènement {Event}"
+                    ]
+                },
+                {
+                    "name": "GetPriceEvent",
+                    "slots": [
+                        {
+                            "name": "Event",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "ça coûte combien {Event}",
+                        "c'est cher {Event}",
+                        "c'est gratuit {Event}",
+                        "{Event} c'est gratuit",
+                        "{Event} c'est cher",
+                        "{Event} ça coûte combien",
+                        "quel est le prix de {Event}",
+                        "quel est le prix de l'évènement {Event}"
+                    ]
+                },
+                {
+                    "name": "GetTagsEventIntent",
+                    "slots": [
+                        {
+                            "name": "Evenement",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "c'est quel style {Evenement}",
+                        "{Evenement} c'est quel style",
+                        "{Evenement} c'est quoi",
+                        "c'est quoi {Evenement}",
+                        "{Evenement} c'est quel genre d'évènement",
+                        "{Evenement} c'est quel genre",
+                        "{Evenement} c'est quoi comme style"
+                    ]
+                },
+                {
+                    "name": "AskEventCityDateKind",
+                    "slots": [
+                        {
+                            "name": "ville",
+                            "type": "AMAZON.City"
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        },
+                        {
+                            "name": "type",
+                            "type": "TypeEvenement",
+                            "samples": [
+                                "{type}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "conseille moi des évènements pour {date} à {ville}",
+                        "y a quoi comme évènements",
+                        "donne-moi les évènements",
+                        "quels sont les évènements",
+                        "donne-moi les évènements  de type {type} à {ville} le {date}",
+                        "donne-moi les évènements  de type {type} à {ville} du {date}",
+                        "quels sont les évènements  de type {type} à {ville} du {date}",
+                        "quels sont les évènements  de type {type} à {ville} de {date}",
+                        "donne-moi les évènements  de type {type} à {ville} de {date}",
+                        "donne-moi les évènements  de type {type} à {ville} {date}",
+                        "donne-moi les évènements  de type {type} de {date} à {ville}",
+                        "donne-moi les évènements  de type {type} du {date} à {ville}",
+                        "donne-moi les évènements  de type {type} le {date} à {ville}",
+                        "donne-moi les évènements  de type {type}  {date} à {ville}",
+                        "donne-moi les évènements du {date} à {ville} de genre  {type}",
+                        "donne-moi les évènements de {date} à {ville} de genre  {type}",
+                        "donne-moi les évènements  {date} à {ville} de genre  {type}",
+                        "donne-moi les évènements à  {ville}  {date} de genre  {type}",
+                        "donne-moi les évènements à  {ville}  du  {date} de genre  {type}",
+                        "donne-moi les évènements à  {ville}  de  {date} de genre  {type}",
+                        "donne-moi les évènements à  {ville}  le  {date} de genre  {type}",
+                        "donne-moi les évènements {type} à {ville} du {date}",
+                        "donne-moi les évènements {type} à {ville} de {date}",
+                        "donne-moi les évènements {type} à {ville} le {date}",
+                        "donne-moi les évènements  {type}  {date} à {ville}",
+                        "donne-moi les évènements de type {type}  {date} à {ville}",
+                        "donne-moi les évènements de type {type} de {date} à {ville}",
+                        "donne-moi les évènements de type {type} du {date} à {ville}",
+                        "donne-moi les évènements de {date} à {ville} de type {type}",
+                        "donne-moi les évènements du {date} à {ville} de type {type}",
+                        "donne-moi les évènements de {ville}  {date} de type {type}",
+                        "donne-moi les évènements à {ville}  {date} de type {type}",
+                        "donne-moi les évènements de {ville} le {date} de type {type}",
+                        "donne-moi les évènements à {ville}  le  {date} de type {type}",
+                        "quels sont les évènements  de type {type} à {ville} le {date}",
+                        "quels sont les évènements  de type {type} à {ville} {date}",
+                        "quels sont les évènements  de type {type}  le {date} à {ville}",
+                        "quels sont les évènements  de type {type}  du {date} à {ville}",
+                        "quels sont les évènements  de type {type}  de  {date} à {ville}",
+                        "quels sont les évènements  de type {type}  {date} à {ville}",
+                        "quels sont les évènements de {date} à {ville} de genre  {type}",
+                        "quels sont les évènements du {date} à {ville} de genre  {type}",
+                        "quels sont les évènements  {date} à {ville} de genre  {type}",
+                        "quels sont les évènements à  {ville}  du  {date} de genre  {type}",
+                        "quels sont les évènements à  {ville}  {date} de genre  {type}",
+                        "quels sont les évènements à  {ville}  le  {date} de genre  {type}",
+                        "quels sont les évènements {type} à {ville} du {date}",
+                        "quels sont les évènements {type} à {ville} de {date}",
+                        "quels sont les évènements {type} à {ville} le {date}",
+                        "quels sont les évènements  {type} à  {ville}  {date}",
+                        "quels sont les évènements  {type}  du {date} à {ville}",
+                        "quels sont les évènements  {type} de  {date} à {ville}",
+                        "quels sont les évènements  {type}  {date} à {ville}",
+                        "quels sont les évènements de type {type}  {date} à {ville}",
+                        "quels sont les évènements de type {type} de {date} à {ville}",
+                        "quels sont les évènements de type {type} du {date} à {ville}",
+                        "quels sont les évènements de {date} à {ville} de type {type}",
+                        "quels sont les évènements du {date} à {ville} de type {type}",
+                        "quels sont les évènements de {ville}  {date} de type {type}",
+                        "quels sont les évènements à {ville}  {date} de type {type}",
+                        "quels sont les évènements de {ville} le {date} de type {type}",
+                        "quels sont les évènements à {ville}  le  {date} de type {type}"
+                    ]
+                },
+                {
+                    "name": "AddDefaultCity",
+                    "slots": [
+                        {
+                            "name": "city",
+                            "type": "AMAZON.City"
+                        }
+                    ],
+                    "samples": [
+                        "Enregistre-moi {city} comme ville par défaut",
+                        "Enregistre {city} comme ville par défaut",
+                        "Garde-moi {city} comme ville par défaut",
+                        "Mets-moi {city} comme ville par défaut",
+                        "Garde {city} de base",
+                        "J'habite à {city} de base",
+                        "J'habite à {city} par défaut",
+                        "Garde {city} comme ville par défaut",
+                        "Mets {city} comme ville par défaut",
+                        "Ma ville par défaut est {city}",
+                        "J'habite à {city}",
+                        "Ma ville est {city}",
+                        "Enregistre {city}"
+                    ]
+                },
+                {
+                    "name": "GetDefaultCity",
+                    "slots": [],
+                    "samples": [
+                        "Donne moi ma ville par défaut",
+                        "Donne-moi ma ville de base",
+                        "Donne-moi ma ville",
+                        "Où j'habite par défaut",
+                        "Où j'habite de base",
+                        "Où j'habite",
+                        "Quelle est ma ville de base",
+                        "Quellle est ma ville",
+                        "Quelle est ma ville par défaut"
+                    ]
+                },
+                {
+                    "name": "ChooseEvent",
+                    "slots": [
+                        {
+                            "name": "choix",
+                            "type": "EventChoice"
+                        }
+                    ],
+                    "samples": [
+                        "fais voir le {choix}",
+                        "fais voir l' {choix}",
+                        "c'est quoi l' {choix}",
+                        "c'est quoi le {choix}",
+                        "montre-moi l' {choix}",
+                        "montre-moi le {choix}",
+                        "l' {choix} évènement",
+                        "le {choix} évènement",
+                        "l' {choix}",
+                        "le {choix}"
+                    ]
+                },
+                {
+                    "name": "NextList",
+                    "slots": [],
+                    "samples": [
+                        "fais voir la suite",
+                        "suivant",
+                        "montre-moi la suite",
+                        "donne-moi la suite",
+                        "y a quoi d'autre",
+                        "Montre-moi d'autres évènements"
+                    ]
+                },
+                {
+                    "name": "PreviousList",
+                    "slots": [],
+                    "samples": [
+                        "y avait quoi déjà",
+                        "précédent",
+                        "reviens en arrière"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "yesNoType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "yes",
+                                "synonyms": [
+                                    "yep",
+                                    "yeah",
+                                    "I do",
+                                    "yes please",
+                                    "you know it"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "no",
+                                "synonyms": [
+                                    "nope",
+                                    "I do not",
+                                    "no thank you"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "TypeEvenement",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "musique",
+                                "synonyms": [
+                                    "musicaux"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "marché"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "foire"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "match"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "théâtre"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "débat"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conférence",
+                                "synonyms": [
+                                    "conf"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "fête"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cinéma",
+                                "synonyms": [
+                                    "film",
+                                    "projection",
+                                    "ciné"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "opéra"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "musée"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "exposition",
+                                "synonyms": [
+                                    "expo"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "festival"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "concert"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "soirée"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "EventChoice",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "avant dernier",
+                                "synonyms": [
+                                    "l'avant dernier",
+                                    "avant-dernier"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cinquième",
+                                "synonyms": [
+                                    "le cinquième"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "dernier",
+                                "synonyms": [
+                                    "le dernier"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "quatrième",
+                                "synonyms": [
+                                    "le quatrième"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "troisième",
+                                "synonyms": [
+                                    "le troisième"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "second",
+                                "synonyms": [
+                                    "le second"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "deuxième",
+                                "synonyms": [
+                                    "le deuxième"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "premier",
+                                "synonyms": [
+                                    "le premier"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "AskEventCityDateKind",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "ville",
+                            "type": "AMAZON.City",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.ElicitDateEvent"
+                            }
+                        },
+                        {
+                            "name": "type",
+                            "type": "TypeEvenement",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.ElicitKindEvent"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "SKILL_RESPONSE"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.ElicitDateEvent",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Quand voulez-vous sortir ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Quelle date vous conviendrait ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Quelle date en particulier vous irait ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Donnez moi la date à laquelle vous voulez sortir"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "A quelle date voulez-vous voir ces évènements ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Quelle date vous interesserait ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "A quelle date?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Veuillez précisez la date"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.ElicitKindEvent",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Quel genre d'évènements voulez-vous?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Veuillez précisez un genre"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Quel type d'évènements recherchez-vous?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.159547924766",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Vous voulez donc voir les évènements de type {type} pour {date} sur {ville} ?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Vous voulez donc voir les évènements de type {type} pour {date} ?"
+                    }
+                ]
+            }
+        ]
+    }
+}
